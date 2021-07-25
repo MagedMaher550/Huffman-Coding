@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huffman Coding</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Huffman Coding Algorithm</h1>
+        <div>
+            <div class="filePicker">
+                <label for="textFile"> Pick a file </label>
+                <input type="file" name="textFile" id="textFile">
+            </div>
+            <br>
+            <br>    
+            <textarea cols="30" rows="6" id="textAreaValue"></textarea>
+            <br>
+            <button id="submitFile" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    <div id="resultsDiv" class="container">
+        <div class="row pushDown">
+            <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <h4 id="OriginalTextValue"></h4>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h4 id="decompressedText"></h4>            
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4 id="compressedTextValue"></h4>
+                </div>
+            </div>
+            <div class="row">
+                <table id="huffmanCodes">
+                    <thead id="tableHeader">
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h4 id="compressionRatio"></h4>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h4 id="executionTime"></h4>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/readFile.js" type="module"></script>
+    <script src="js/showResults.js" type="module"></script>
+    <script src="js/priorityQueue.js" type="module"></script>
+    <script src="js/project.js" type="module"></script>
+</body>
+</html>
